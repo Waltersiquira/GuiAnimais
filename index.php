@@ -21,7 +21,7 @@
                 echo 'Não existe nenhum animal para adotar ainda';
             } else {
                 while ($reg=$busca->fetch_object()){
-                    echo "<tr><td><a href='pagina-animal.php?i=$reg->id'><img src='$reg->imagem'></a></td><td>$reg->nome</td></tr>";
+                    echo "<tr><td><a href='pagina-animal.php?i=$reg->id'><img src='$reg->imagem' width='250'></a></td><td>$reg->nome</td></tr>";
                 }
             }
         }
