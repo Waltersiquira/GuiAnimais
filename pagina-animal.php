@@ -20,7 +20,7 @@
                 echo 'Não existe nenhum animal desse <br>';
             } else {
                 while ($reg=$busca->fetch_object()){
-                    echo "<img src='$reg->imagem' width='300'> <h3>$reg->nome</h3> <h4>R$$reg->preço</h4> <hr> <p>$reg->descrição</p> <button><a href='comprar-animal.php?i=$reg->id' style='text-decoration: none;'>Comprar</a></button> <br>";
+                    echo "<img src='$reg->imagem' width='300'> <h3>$reg->nome</h3> <h4>R$$reg->preço</h4> <hr> <p>$reg->descrição</p> <button><a href='comprar-animal.php?i=$reg->id' style='text-decoration: none;'>Adotar</a></button> <br>";
                 }
             }
         }
